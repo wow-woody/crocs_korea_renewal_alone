@@ -1,0 +1,166 @@
+:root {
+    --mainColor: #66de1b;
+    --mainColorTransparent: rgba(102, 222, 27, 0.1);
+    --subColor: #444444;
+}
+
+html {
+    font-size: 10px;
+    margin: 0;
+    /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', */
+    /* 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif; */
+    font-family: 'all-round-gothic', 'NanumSquareNeo', 'NanumSquareNeoLight', 'NanumSquareNeoBold',
+        'NanumSquareNeoExtraBold', 'NanumSquareNeoHeavy', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-size: 1.6rem;
+    color: #222;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* background-color: lightgreen; */
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+button {
+    all: unset; /* 브라우저 기본 스타일 제거 (배경, 테두리, 패딩 등) */
+    display: inline-flex; /* 버튼 안의 텍스트나 아이콘을 정렬하기 쉽게 flex 사용 */
+    align-items: center; /* 수직 가운데 정렬 */
+    justify-content: center; /* 수평 가운데 정렬 */
+    padding: 0.5em 1em; /* 내부 여백: 상하 0.5em, 좌우 1em */
+    /* background-color: #000; 기본 배경색: 검정 */
+    /* color: #fff; 기본 텍스트 색상: 흰색 */
+    font: inherit; /* 부모 요소의 폰트 스타일 상속 */
+    font-weight: 500; /* 약간 두꺼운 텍스트로 버튼 강조 */
+    border-radius: 4px; /* 모서리 둥글게 처리 */
+    border: none; /* 테두리 제거 */
+    cursor: pointer; /* 마우스 오버 시 손가락 커서 표시 */
+    box-sizing: border-box; /* 패딩과 테두리를 포함한 너비 계산 */
+    user-select: none; /* 텍스트 드래그 방지 */
+    transition: background-color 0.2s ease, transform 0.1s ease; /* 상태 변화 부드럽게 처리 */
+}
+
+/* section {
+    height: 100vh;
+    padding: 12rem;
+} */
+
+/* 키테고리 상단 */
+
+.instagram {
+    background: var(--mainColorTransparent);
+    padding-top: 10rem;
+    padding-bottom: 20rem;
+}
+
+.instagram__content {
+    max-width: 1440px;
+    margin: 0 auto;
+}
+.title_wrap {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-top: 12rem;
+    color: var(--subColor);
+}
+.section_title {
+    font-size: 5rem;
+    font-weight: 900;
+    padding-top: 10rem 0 0;
+}
+
+.section_sub_title {
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+
+.instagram__video-list {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 5rem;
+    gap: 4rem;
+}
+.instagram__video-prev {
+    transform: rotate(-90deg);
+}
+
+
+.prev_text {
+    font-size: 2rem;
+    font-weight: 600;
+}
+
+.instagram__video-item {
+    width: 38.8rem;
+    height: 52rem;
+    border-radius: 1rem;
+    position: relative;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+.instagram__video-item:hover {
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+    transform: translateY(-2px);
+}
+
+.instagram__video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+}
+
+.instagram__play-icon {
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+    z-index: 10;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+}
+.instagram__play-icon:hover {
+    transform: scale(1.1);
+}
+
+.instagram__button-wrap {
+    display: inline-flex;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    padding: 0.2rem 0.6rem;
+    border-radius: 999rem;
+    font-size: 1.4rem;
+    font-weight: 500;
+    color: #fff;
+    position: absolute;
+    left: 2rem;
+    bottom: 2rem;
+    z-index: 10;
+    transition: all 0.2s ease;
+}
+
+.instagram__button-wrap:hover {
+    background: rgba(0, 0, 0, 0.4);
+    backdrop-filter: blur(6px);
+    -webkit-backdrop-filter: blur(6px);
+    transform: translateY(-1px);
+}
