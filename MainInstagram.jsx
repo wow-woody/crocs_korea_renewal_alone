@@ -1,5 +1,5 @@
 import React, { useRef, useState } from 'react';
-import './MainInstagram.css';
+import './css/MainInstagram.css';
 
 const MainInstagram = () => {
   const videoRefs = [useRef(null), useRef(null), useRef(null)];
