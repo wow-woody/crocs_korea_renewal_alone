@@ -24,20 +24,22 @@ const MainCategory = () => {
   return (
     <main>
       <section className="category">
-        <Title
-          title="Shop by Category"
-          subTitle="당신의 스타일에 맞는 완벽한 크록스를 찾아보세요"
-        />
-        
-        <CategoryList 
-          categories={categoryData}
-          onCategoryClick={handleCategoryClick}
-        />
-        
-        <PromotionList
-          promotions={promotionData}
-          onPromotionClick={handlePromotionClick}
-        />
+        <div className='inner'>
+          <Title
+            title="Shop by Category"
+            subTitle="당신의 스타일에 맞는 완벽한 크록스를 찾아보세요"
+          />
+
+          <CategoryList
+            categories={categoryData}
+            onCategoryClick={handleCategoryClick}
+          />
+
+          <PromotionList
+            promotions={promotionData}
+            onPromotionClick={handlePromotionClick}
+          />
+        </div>
       </section>
     </main>
   );
