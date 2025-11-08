@@ -1,5 +1,6 @@
 import React from 'react';
 import './MainCategory.scss';
+import './index.css';
 import Title from './components/Title';
 import CategoryList from './components/CategoryList';
 import PromotionList from './components/PromotionList';

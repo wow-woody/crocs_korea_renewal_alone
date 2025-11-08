@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
-import './MainInstagram.css';
+import './MainInstagram.scss';
+import './index.css';
 import Title from './components/Title';
 import InstagramPrevButton from './components/InstagramPrevButton';
 import InstagramVideoList from './components/InstagramVideoList';
@@ -35,21 +36,21 @@ const MainInstagram = () => {
   return (
     <main>
       <section className="instagram">
-        <div className="instagram__content">
-          <Title
-            title="Your Crocs. Your Splash."
-            subTitle="스타들의 일상 속, 크록스를 만나보세요."
-          />
+          <div className="instagram__content">
+            <Title
+              title="Your Crocs. Your Splash."
+              subTitle="스타들의 일상 속, 크록스를 만나보세요."
+            />
 
-          {/* <InstagramPrevButton onClick={handlePrevClick} /> */}
+            {/* <InstagramPrevButton onClick={handlePrevClick} /> */}
 
-          <InstagramVideoList
-            videos={instagramData}
-            videoRefs={videoRefs}
-            playStates={playStates}
-            onPlayClick={handlePlayClick}
-          />
-        </div>
+            <InstagramVideoList
+              videos={instagramData}
+              videoRefs={videoRefs}
+              playStates={playStates}
+              onPlayClick={handlePlayClick}
+            />
+          </div>
       </section>
     </main>
   );
